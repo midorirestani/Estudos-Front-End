@@ -1,42 +1,43 @@
-.menu{
- height: 64px;
- position: relative;
-}
-.menu-icon-padding{
-    padding: 20px;
-}
-.avatar-icon {
-    position: relative;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+.menu {
+  display: flex;
 }
 
-.settings.icon{
-    margin-top: 20px;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    color: #000000;
+.profile-avatar {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
 }
 
-.settings.icon:before{
-  content: '';
+.icon {
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+
+.icon--settings::before {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
   width: 42px;
   height: 16px;
-  border-top: 2px solid #000000 ;
-  border-bottom: 2px solid #000000;
+  border-top: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
 }
-.settings.icon:after{
-    content: '';
-    position: absolute;
-    top:-5px;
-    left: 24px;
-    width: 8px;
-    height: 8px;
-    border: 2px solid currentColor;
-    background-color: white;
-    border-radius: 50%;
-    box-shadow: -14px 18px 0px -2px white, -14px 18px 0px 0px currentColor ;
+
+.icon--settings::after{
+  content: '';
+  position: absolute;
+  top: 17px;
+  left: 32px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid currentColor;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow:
+    -14px 18px 0px -2px white,
+    -14px 18px 0px 0px currentColor;
 }
