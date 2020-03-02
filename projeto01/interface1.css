@@ -24,6 +24,10 @@
   border-radius: 30px;
 }
 
+.card-grid{
+  display: grid;
+}
+
 /*********ICONS**************/
 .icon {
   position: relative;
@@ -60,12 +64,12 @@
 .icon--arrow-up{
   position: absolute;
   content:'';
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   border-top: 2px solid #54c534;
   border-left: 2px solid #54c534;
   border-top-left-radius: 10%;
-  transform: translate(-30%, 200%) rotate(45deg);
+  transform: translate(-50%, 125%) rotate(45deg);
   
 }
 
@@ -88,10 +92,10 @@
   background-color: #ffbbaa;
 }
 .background-purple{
-  background-color: #57445B ;
+  background-color: #42254a ;
 }
 .background-orange{
-  background-color: #FA5331;
+  background-color: #f2825b;
 }
 
 /******Padding and Margin Config******/
@@ -116,8 +120,11 @@
 }
 /*****************/
 .icon-box{
+  
+  align-items: center;
   text-align: center;
   height: 32px;
   width: 32px;
   border-radius: 20%;
+  margin-right: 10px;
 }
